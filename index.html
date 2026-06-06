@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Roy B. Abante | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Roy<span>.</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#esports">Esports</a></li>
+      <li><a href="#capstone">Capstone</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#achievements" onclick="toggleMenu()">Achievements</a>
+    <a href="#esports" onclick="toggleMenu()">Esports</a>
+    <a href="#capstone" onclick="toggleMenu()">Capstone</a>
+    <a href="#certificates" onclick="toggleMenu()">Certificates</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Roy B. <span class="accent">Abante</span></h1>
+        <p class="hero-title">BS Information Systems Student <span class="title-divider">|</span> <span class="accent">UI/UX Designer</span></p>
+        <p class="hero-desc">Passionate about technology, teamwork, and turning ideas into reality. Champion mindset — both in tech and on the battlefield.</p>
+        <div class="hero-btns">
+          <a href="#about" class="btn-primary">Explore My Work</a>
+          <a href="CV/Messenger_creation_30CE1FAD-580C-436E-8023-DB6DE2913E5E.jpeg" download class="btn-outline">Download CV</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="img-ring">
+          <img src="PROFILE.jpg" alt="Roy B. Abante" />
+        </div>
+        <div class="floating-badge badge-1"><i class="fas fa-trophy"></i> Champion</div>
+        <div class="floating-badge badge-2"><i class="fas fa-code"></i> IS Student</div>
+        <div class="floating-badge badge-3"><i class="fas fa-pen-nib"></i> UI/UX Designer</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2>About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm <strong>Roy B. Abante</strong>, a driven BS Information Systems student with a passion for technology, collaboration, and continuous growth. I believe in bringing the same dedication I show in every challenge — academic or competitive — into every team I join.</p>
+          <p>My experience representing my school in a Mobile Legends esports competition against IT and IS students from other universities taught me invaluable lessons in strategy, teamwork, and performing under pressure — skills I carry into every endeavor.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">BSIS</span>
+              <span class="stat-label">Degree Program</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">🏆</span>
+              <span class="stat-label">Champion</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Passion</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fas fa-laptop-code"></i><span>Web Development</span></div>
+          <div class="skill-card"><i class="fas fa-database"></i><span>Database Systems</span></div>
+          <div class="skill-card"><i class="fas fa-project-diagram"></i><span>Systems Analysis</span></div>
+          <div class="skill-card"><i class="fas fa-pen-nib"></i><span>UI/UX Design</span></div>
+          <div class="skill-card"><i class="fas fa-users"></i><span>Team Leadership</span></div>
+          <div class="skill-card"><i class="fas fa-chess"></i><span>Strategic Thinking</span></div>
+          <div class="skill-card"><i class="fas fa-object-group"></i><span>Wireframing & Prototyping</span></div>
+          <div class="skill-card"><i class="fas fa-lightbulb"></i><span>Problem Solving</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPORTS ACHIEVEMENT -->
+  <section id="achievements" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Highlight</span>
+        <h2>Championship <span class="accent">Achievement</span></h2>
+      </div>
+      <div class="achievement-banner">
+        <div class="achievement-text">
+          <div class="champ-badge"><i class="fas fa-crown"></i> CHAMPION</div>
+          <h3>DNSC Esports — Mobile Legends</h3>
+          <p>Represented our school in an inter-university Mobile Legends competition among IT and IS students. Our team's dedication, strategic coordination, and relentless practice led us to claim the championship title — proving that excellence in gaming mirrors excellence in real-world teamwork.</p>
+          <ul class="achievement-list">
+            <li><i class="fas fa-check-circle"></i> Inter-university competition</li>
+            <li><i class="fas fa-check-circle"></i> IT & IS student participants</li>
+            <li><i class="fas fa-check-circle"></i> Championship title secured</li>
+            <li><i class="fas fa-check-circle"></i> Enhanced teamwork & strategy skills</li>
+          </ul>
+        </div>
+        <div class="achievement-img">
+          <img src="DNSC ESPORTS ACHIEVEMENT/FB_IMG_6444461828886754.jpg" alt="Championship" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPORTS GALLERY -->
+  <section id="esports" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gallery</span>
+        <h2>Esports <span class="accent">Moments</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="DNSC ESPORTS ACHIEVEMENT/Messenger_creation_3219A1D2-C413-467D-B1B1-50F8B0642F57.jpeg" alt="Esports 1"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="DNSC ESPORTS ACHIEVEMENT/FB_IMG_1780575322812.jpg" alt="Esports 2"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="DNSC ESPORTS ACHIEVEMENT/FB_IMG_1780575410295.jpg" alt="Esports 3"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="DNSC ESPORTS ACHIEVEMENT/FB_IMG_1780575429887.jpg" alt="Esports 4"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="DNSC ESPORTS ACHIEVEMENT/FB_IMG_1780575439692.jpg" alt="Esports 5"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="DNSC ESPORTS ACHIEVEMENT/Messenger_creation_E0739C8B-18F7-4AA5-B40F-FADFB7CD23A1.jpeg" alt="Esports 6"/>
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPSTONE -->
+  <section id="capstone" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic</span>
+        <h2>Capstone <span class="accent">Defense</span></h2>
+      </div>
+      <div class="capstone-grid">
+        <div class="capstone-card">
+          <div class="capstone-img">
+            <img src="CAPSTONE DEFENSE/Capstone Title Defense.jpg" alt="Title Defense"/>
+          </div>
+          <div class="capstone-info">
+            <span class="capstone-tag">Phase 1</span>
+            <h4>Title Defense</h4>
+          </div>
+        </div>
+        <div class="capstone-card">
+          <div class="capstone-img">
+            <img src="CAPSTONE DEFENSE/Capstone Outline Defense.jpg" alt="Outline Defense"/>
+          </div>
+          <div class="capstone-info">
+            <span class="capstone-tag">Phase 2</span>
+            <h4>Outline Defense</h4>
+          </div>
+        </div>
+        <div class="capstone-card">
+          <div class="capstone-img">
+            <img src="CAPSTONE DEFENSE/Capstone Pre-Deployment Defense_.jpg" alt="Pre-Deployment"/>
+          </div>
+          <div class="capstone-info">
+            <span class="capstone-tag">Phase 3</span>
+            <h4>Pre-Deployment Defense</h4>
+          </div>
+        </div>
+        <div class="capstone-card">
+          <div class="capstone-img">
+            <img src="CAPSTONE DEFENSE/Capstone Final Defense_.jpg" alt="Final Defense"/>
+          </div>
+          <div class="capstone-info">
+            <span class="capstone-tag">Phase 4</span>
+            <h4>Final Defense</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2>Certificates & <span class="accent">Awards</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" onclick="openModal('CERTIFICATE/Certificate of Excellence - BSIS 1D.jpg', 'Certificate of Excellence — BSIS 1D')">
+          <div class="cert-img"><img src="CERTIFICATE/Certificate of Excellence - BSIS 1D.jpg" alt="Excellence"/></div>
+          <div class="cert-body">
+            <i class="fas fa-award cert-icon"></i>
+            <h4>Certificate of Excellence</h4>
+            <p>BSIS 1D</p>
+          </div>
+        </div>
+        <div class="cert-card" onclick="openModal('CERTIFICATE/Certificate of OJT Completion.jpg', 'Certificate of OJT Completion')">
+          <div class="cert-img"><img src="CERTIFICATE/Certificate of OJT Completion.jpg" alt="OJT"/></div>
+          <div class="cert-body">
+            <i class="fas fa-briefcase cert-icon"></i>
+            <h4>OJT Completion</h4>
+            <p>On-the-Job Training</p>
+          </div>
+        </div>
+        <div class="cert-card" onclick="openModal('CERTIFICATE/Certificate of Participation in the Month of the Ocean Celebration Activity_.jpg', 'Month of the Ocean — Certificate of Participation')">
+          <div class="cert-img"><img src="CERTIFICATE/Certificate of Participation in the Month of the Ocean Celebration Activity_.jpg" alt="Ocean"/></div>
+          <div class="cert-body">
+            <i class="fas fa-water cert-icon"></i>
+            <h4>Month of the Ocean</h4>
+            <p>Certificate of Participation</p>
+          </div>
+        </div>
+        <div class="cert-card" onclick="openModal('CERTIFICATE/Film Project - _ The Whys and Wherefores_.webp', 'Film Project — The Whys and Wherefores')">
+          <div class="cert-img"><img src="CERTIFICATE/Film Project - _ The Whys and Wherefores_.webp" alt="Film"/></div>
+          <div class="cert-body">
+            <i class="fas fa-film cert-icon"></i>
+            <h4>Film Project</h4>
+            <p>The Whys and Wherefores</p>
+          </div>
+        </div>
+        <div class="cert-card" onclick="openModal('CERTIFICATE/Multi Media Festival 2022.png', 'Multi Media Festival 2022')">
+          <div class="cert-img"><img src="CERTIFICATE/Multi Media Festival 2022.png" alt="Multimedia"/></div>
+          <div class="cert-body">
+            <i class="fas fa-photo-video cert-icon"></i>
+            <h4>Multi Media Festival</h4>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section dark-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>I'm open to opportunities, collaborations, and connections. Feel free to reach out!</p>
+          <div class="contact-items">
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>royabante@email.com</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Philippines</span></div>
+            <div class="contact-item"><i class="fas fa-graduation-cap"></i><span>BSIS Student</span></div>
+          </div>
+          <div class="contact-socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <span class="accent">Roy B. Abante</span> · 2026</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <img id="modalImg" src="" alt="" />
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
